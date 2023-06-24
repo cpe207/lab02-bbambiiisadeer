@@ -1,19 +1,40 @@
-h3 {
-  text-align: center;
-  color: #ffcc01;
+h4 {
+  color: #e33161;
   font-style: italic;
 }
 
-.skill-header {
-  text-align: left;
+a:link {
+  color: #e33161;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #e37c91;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d30c4d;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #e6dd7f;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 .skill-container {
-  border: solid #7ec636;
+  background-color: #edaab3;
+  border: solid #edaab3;
+  border-radius: 20px;
   width: 400px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
