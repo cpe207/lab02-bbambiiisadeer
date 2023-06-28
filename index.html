@@ -5,77 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>My Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body bgcolor="#efd0d6">
-    <h1
-      style="
-        text-align: center;
-        text-shadow: 0px -1px 1px #000000;
-        color: #b2f2ff;
-        font-style: italic;
-      "
-    >
-      My Portfolio
-    </h1>
-    <div
-      style="background-color: #ffffe0; padding-top: 8px; padding-bottom: 8px"
-    >
+
+  <body>
+    <style>
+      body {
+        background-image: url("image/งานศิลปะที่ไม่มีชื่อ 2.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+    </style>
+    <p style="background-image: url('image/bg.jpg')"></p>
+    <div>
       <center>
-        <a href="index.html">Home |</a>
-        <a href="experience.html">Experience |</a>
-        <a href="contract.html">Contract</a>
+        <br />
+        <font face="Bedrock">
+          <a href="index.html">Home |</a>
+          <a href="experience.html">Experience |</a>
+          <a href="gallery.html">Gallery |</a>
+          <a href="contract.html">Contract</a>
+        </font>
       </center>
     </div>
-
     <br />
 
-    <center>
-      <img src="image/งานศิลปะที่ไม่มีชื่อ 2.png" width="300px" />
-    </center>
-
-    <h3
+    <div
+      class="d-flex justify-content-center align-items-center gap-3 mx-auto my-4 border p-2"
       style="
-        text-align: center;
-        text-shadow: 0px -1px 1px #ffffff;
-        color: #e33161;
-        font-style: italic;
+        max-width: 700px;
+        height: 200px;
+        border-radius: 8px;
+        background-color: rgb(255, 255, 255, 0.4);
       "
     >
-      Nunnapat Sirithanachokpaisan
-    </h3>
+      <div class="d-flex">
+        <div class="flip-card" ; me-auto>
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="image/IMG_2250.PNG"
+                style="width: 150px; height: 150px"
+              />
+            </div>
+            <div class="flip-card-back">
+              <img
+                src="image/IMG_2249.JPG"
+                style="width: 150px; height: 150px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <p style="text-align: center">
-      Hi! My name is Bam. Nice to meet you.<br />
-    </p>
+      <div class="d-none d-sm-block align-content-end">
+        <div
+          class="displat-5 mb-3 letter"
+          style="
+            font-family: powerpuff;
+            color: #f48eb3;
+            text-shadow: -5px 0 black, 0 5px black, 5px 0 black, 0 -5px black;
+            font-size: 30px;
+          "
+        >
+          Nunnapat Sirithanachokpaisan
+        </div>
+        <font face="Bedrock" size="4">
+          <div class="text-muted">
+            Hi! My name is Bam, I am studying at ChiangMai University.
+          </div>
+        </font>
+      </div>
+    </div>
 
     <h3
       style="
         text-align: center;
-        text-shadow: 0px -1px 1px #686868;
-        color: #b2f2ff;
-        font-style: italic;
+        text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
+        color: #ffffff;
+        font-family: powerpuff;
       "
     >
       Skills
     </h3>
 
     <div class="skill-container">
-      <h3 style="text-align: center; color: #b75c73; font-style: italic">
+      <br />
+      <h3 style="text-align: center; color: #3bbf1d; font-family: powerpuff">
         Programming
       </h3>
-      <p style="text-align: center">
-        I have experience coding c++, loading...JavaScript, Html
-      </p>
+
+      <font face="Bedrock" size="4">
+        <p style="text-align: center">
+          I have experience coding c++, loading...JavaScript, Html
+        </p></font
+      >
       <br />
     </div>
 
     <div class="skill-container">
-      <h3 style="text-align: center; color: #b75c73; font-style: italic">
+      <br />
+      <h3 style="text-align: center; color: #3bbf1d; font-family: powerpuff">
         Night Owl
       </h3>
-      <p style="text-align: center">
-        The later it gets, the more flowing idea I get.
-      </p>
+      <font face="Bedrock" size="4">
+        <p style="text-align: center">
+          The later it gets, the more flowing idea I get.
+        </p></font
+      >
       <br />
     </div>
   </body>

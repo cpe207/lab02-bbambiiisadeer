@@ -1,35 +1,91 @@
-h4 {
-  color: #e33161;
-  font-style: italic;
+img {
+  border-radius: 50%;
+}
+
+@font-face {
+  font-family: "powerpuff";
+  src: url("font/Powerpuff.ttf");
+}
+
+.flip-card {
+  background-color: none;
+  width: 150px;
+  height: 150px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: transparent;
+  transform: rotateY(180deg);
 }
 
 a:link {
-  color: #e33161;
+  /* color: #ffffff; */
   background-color: transparent;
   text-decoration: none;
+  font-size: large;
 }
 
 a:visited {
-  color: #e37c91;
+  color: #ffffff;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: #d30c4d;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:active {
   color: #e6dd7f;
   background-color: transparent;
   text-decoration: underline;
 }
 
+a:active {
+  color: #ffec20;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 .skill-container {
-  background-color: #edaab3;
-  border: solid #edaab3;
+  background-color: #ffe700;
+  border: solid #ffe700;
   border-radius: 20px;
   width: 400px;
   margin-left: auto;
@@ -37,4 +93,11 @@ a:active {
   padding-left: 16px;
   padding-right: 16px;
   margin-bottom: 20px;
+}
+
+.b1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 200 px;
 }
